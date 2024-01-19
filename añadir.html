@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive Admin Dashboard Template">
+  <meta name="keywords" content="admin,dashboard">
+  <meta name="author" content="stacks">
+
+  <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Title -->
+  <title>HUT Admin Dashboard</title>
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,800&display=swap" rel="stylesheet">
+  <link href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/plugins/font-awesome/css/all.min.css" rel="stylesheet">
+  <link href="../../assets/plugins/perfectscroll/perfect-scrollbar.css" rel="stylesheet">
+  <link href="../../assets/plugins/apexcharts/apexcharts.css" rel="stylesheet">
+  <link href="../../assets/plugins/DataTables/datatables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+
+  <!-- Theme Styles -->
+  <link href="../../assets/css/main.css" rel="stylesheet">
+  <link href="../../assets/css/custom.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+  <div class="page-container">
+    <div class="page-header">
+      <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+        <div class="" id="navbarNav">
+          <ul class="navbar-nav" id="leftNav">
+            <li class="nav-item">
+              <a class="nav-link" id="sidebar-toggle" href="#"><i class="fas fa-bars"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a class="navbar-brand" href="index.html"></a>
+        </div>
+        <div class="" id="headerNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link notifications-dropdown" href="#" id="notificationsDropDown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">0</a>
+              <div class="dropdown-menu dropdown-menu-end notif-drop-menu" aria-labelledby="notificationsDropDown">
+                <h6 class="dropdown-header">Notificaciones</h6>
+                <!-- <a href="#">
+                              <div class="header-notif">
+                                <div class="notif-image">
+                                  <span class="notification-badge bg-info text-white">
+                                    <i class="fas fa-bullhorn"></i>
+                                  </span>
+                                </div>
+                                <div class="notif-text">
+                                  <p class="bold-notif-text">faucibus dolor in commodo lectus mattis</p>
+                                  <small>19:00</small>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="header-notif">
+                                <div class="notif-image">
+                                  <span class="notification-badge bg-primary text-white">
+                                    <i class="fas fa-bolt"></i>
+                                  </span>
+                                </div>
+                                <div class="notif-text">
+                                  <p class="bold-notif-text">faucibus dolor in commodo lectus mattis</p>
+                                  <small>18:00</small>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="header-notif">
+                                <div class="notif-image">
+                                  <span class="notification-badge bg-success text-white">
+                                    <i class="fas fa-at"></i>
+                                  </span>
+                                </div>
+                                <div class="notif-text">
+                                  <p>faucibus dolor in commodo lectus mattis</p>
+                                  <small>yesterday</small>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="header-notif">
+                                <div class="notif-image">
+                                  <span class="notification-badge">
+                                    <img src="../../assets/images/avatars/profile-image.png" alt="">
+                                  </span>
+                                </div>
+                                <div class="notif-text">
+                                  <p>faucibus dolor in commodo lectus mattis</p>
+                                  <small>yesterday</small>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="header-notif">
+                                <div class="notif-image">
+                                  <span class="notification-badge">
+                                    <img src="../../assets/images/avatars/profile-image.png" alt="">
+                                  </span>
+                                </div>
+                                <div class="notif-text">
+                                  <p>faucibus dolor in commodo lectus mattis</p>
+                                  <small>yesterday</small>
+                                </div>
+                              </div>
+                            </a> -->
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link profile-dropdown" href="#" id="profileDropDown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"></a>
+              <div class="dropdown-menu dropdown-menu-end profile-drop-menu" aria-labelledby="profileDropDown">
+                <a class="dropdown-item" id="userName" href="#"><i data-feather="user"></i></a>
+                <div class="dropdown-divider"></div>
+                <a id="logout" class="dropdown-item" href="#"><i data-feather="log-out"></i>Cerrar Sesión</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="page-sidebar">
+      <ul class="list-unstyled accordion-menu">
+        <li class="sidebar-title">
+          Principal
+        </li>
+        <li class="">
+          <a href="index.html"><i data-feather="home"></i>Dashboard</a>
+        </li>
+        <li class="sidebar-title">
+          Accesos Directos
+        </li>
+        <li>
+          <a href="email.html"><i data-feather="git-pull-request"></i>Árbol de Desición</a>
+        </li>
+
+        <li>
+          <a href="usuarios.html"><i data-feather="user"></i>Usuarios</a>
+        </li>
+
+        <li>
+          <a href="evaluación.html"><i data-feather="book-open"></i>Evalución de Sesiones</a>
+        </li>
+
+        <li class="active-page">
+          <a href="añadir.html"><i data-feather="file-plus"></i>Sesiones</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="page-content">
+      <div class="main-wrapper">
+
+        <h4 class="p-2 mb-5">Sesiones sin evaluación</h4>
+
+        <div class="row" id="sessionCard">
+
+          <div class="col-md-5 col-12" data-bs-toggle="modal" data-bs-target="#sure">
+
+            <div class="d-flex align-items-center justify-content-center card-add" style="height: 90% !important;">
+
+              <div class="icon p-5 d-block"><i class="add" data-feather="file-plus"></i></div>
+              
+
+              <!-- <span class="header d-block">Agregar una nueva sesión</span> -->
+            
+               
+            </div>
+            
+          </div>
+          
+        </div>
+
+
+        <h4 class="p-2 mb-5">Tus Sesiones evaluadas</h4>
+
+        <div class="row mb-5" id="notYet">
+          <div class="card-body" style="background-color: #f3f4f7; box-shadow: none;">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <div class="col-12 text-center">
+                <h4  style="color: #dbdce3;">Aún no has evaluado ninguna sesión</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="sessionCardSelf">
+          
+        </div>
+
+
+
+
+        <h4 class="p-2 mb-5">Sesiones evaluadas</h4>
+
+        <div class="row" id="sessionCardOk">
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <!-- MODAL PARA AÑADIR SESIÓN -->
+
+  <div class="modal fade" id="sure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Añadir sesión para evaluación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="sesionModal" class="modal-body">
+
+          <div class="card-body">
+            <p class="card-description"></p>
+            <form>
+              <!-- <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Titulo de la sesión:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                        <div id="emailHelp" class="form-text"></div>
+                      </div> -->
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Clase:</label>
+                <select id="select_class" class="form-select form-control" aria-label="Default select example">
+                  <option selected>-</option>
+                  <option value="SK">Soft Skills</option>
+                  <option value="LGEI">Liderazgo</option>
+
+                </select>
+
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Fecha de la sesión:</label>
+
+                <div class="input-group date" id="datepicker">
+                  <input type="text" class="form-control" id="dateInput" />
+                  <span class="input-group-append">
+                    <span class="input-group-text d-block"
+                      style="border-bottom-left-radius: 0; border-top-left-radius: 0;">
+                      <i class="size-14" data-feather="calendar"></i>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Referencia:</label>
+                <input type="text" class="form-control" value="S-" id="ref" disabled>
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Añadir Documento:</label>
+                <div class="drag-area d-flex flex-column justify-content-center align-items-center animate__animated">
+                  <div class="icon">
+                    <i class="size-18" data-feather="file-plus"></i>
+                  </div>
+
+                  <span class="header">Arrastra y suelta el archivo</span>
+                  <span class="header2">o <span id="search" class="button">búscalo</span></span>
+                  <input id="input" type="file" hidden>
+                  <div id="emailHelp" class="form-text fileType">Tipo de archivo soportado: PDF</div>
+                  <span class="header"><span class="button-cancel">Cancelar</span></span>
+
+
+                </div>
+                <div id="emailHelp" class="form-text"></div>
+
+              </div>
+
+
+
+
+            </form>
+
+
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" id="addSession">Añadir Sesión</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Javascripts -->
+
+  <!-- ✅ load jQuery ✅ -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- ✅ load jquery UI ✅ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+  </script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="../../assets/plugins/perfectscroll/perfect-scrollbar.min.js"></script>
+  <script src="../../assets/plugins/apexcharts/apexcharts.min.js"></script>
+
+  <script src="../../assets/plugins/DataTables/datatables.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script type="module" src="../../assets/js/drag_drop.js"></script>
+  <script type="module" src="../../assets/js/index.js"></script>
+  <script src="../../assets/js/pages/dashboard.js"></script>
+  <script src="../../assets/js/pages/datatables.js"></script>
+</body>
+
+</html>

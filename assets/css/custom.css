@@ -1,0 +1,190 @@
+/* Write your custom CSS here */
+
+.icons {
+    text-align: center !important;
+} 
+
+
+.fixed {
+    position: fixed;
+    width: 25%;
+}
+
+.scrollit {
+    float: left;
+    width: 71%
+}
+
+.comment {
+    resize: none;
+    height: 80;
+    width: 100%;
+    border-radius: 15px;
+    border: rgba(1, 0, 0, 0.2) 1px solid;
+  }
+
+input:focus {
+
+    border: rgb(128, 97, 232) 1px solid !important;
+
+}
+
+.tablespan {
+    color:  rgba(1, 0, 0, 0.3);
+}
+.sesion {
+    border-radius: 15px !important;
+
+    background-color: white !important;
+}
+
+.drag-area{
+    height: 300px;
+    border: 3px dashed #e0eafc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px, auto;
+    
+}
+
+.dragBG {
+
+    background-color: rgba(120, 135, 252, 0.05) !important;
+
+}
+
+.drag-area .icon {
+    font-size: 50px !important;
+}
+
+.add{
+    width: 56px;
+    height: 56px;
+}
+
+.size-18{
+    width: 46px;
+    height: 46px;
+    color: #7888fc;
+}
+
+.size-28{
+    width: 76px;
+    height: 76px;
+    color: #7888fc;
+}
+
+.size-14{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.drag-area .header {
+    font-size: 15px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+
+
+.drag-area .header2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.drag-area .button {
+    color: #7888fc;
+    cursor: pointer;
+}
+
+.active {
+    border: 3px #7888fc dashed !important;
+}
+
+.success {
+    border: 3px #7888fc dashed !important;
+}
+
+.error {
+    border: 3px #f67777 dashed !important;
+}
+
+.text-error{
+    color: #f67777 !important;
+}
+
+.button-cancel {
+    color: #f67777;
+    cursor: pointer;
+   display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.form-check-input {
+    text-align: center !important;
+}
+
+.input-group-append {
+    cursor: pointer;
+  }
+
+.card-add {
+    /*background-color: ;*/
+    border: 4px solid #e6e7eb;
+    border-radius: 10px !important;
+    color: #d9dadd !important;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.6s;
+
+}
+
+
+.card-add:hover {
+    background-color: rgba(120, 135, 252, 0.05) !important;
+    border: 4px solid #7888fc;
+    border-radius: 10px !important;
+    color: #7888fc !important;
+
+   
+}
+
+th, td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+  }
+
+#noSession {
+    display: none;
+}
+
+#sessionPlace {
+    display: none;
+}
+
+
+.pdfCard {
+
+    height: 100vh !important;
+}
+
+.pdfEmbed {
+    height: 100vh;
+}
+
+.pPhoto {
+    border-radius: 50%;
+}
+
+li{
+    margin: 10px 0;
+  }
+
+
